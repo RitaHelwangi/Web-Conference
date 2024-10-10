@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #background-video {
@@ -15,7 +15,7 @@
 .hero {
   width: 100;
   height: 100;
-  background-image: linear-gradient();
+  background-image: linear-gradient ();
   position: relative;
   padding: 0 5%;
   display: flex;
@@ -23,7 +23,7 @@
   justify-content: center;
 }
 
-.nav {
+nav.navbar {
   width: 100;
   position: absolute;
   top: 0;
@@ -35,12 +35,19 @@
 }
 
 nav .logo {
-  width: 80px;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  object-fit: cover; 
 }
 
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 nav ul li {
   list-style: none;
-  display: inline-block;
   margin-left: 40px;
 }
 
@@ -49,3 +56,21 @@ nav ul li a {
   color: blanchedalmond;
   font-size: 17px;
 }
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 50px;
+  color: blanchedalmond;
+  font-weight: 500px;
+}
+
+
+.Welcome {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  text-align: center; 
