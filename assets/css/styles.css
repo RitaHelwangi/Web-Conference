@@ -37,6 +37,7 @@ header {
 .nav-left li a:hover,
 .nav-right li a:hover {
   color: #ff007f;
+  text-shadow: 0 0 5px rgba(255, 0, 127, 0.5);
 }
 
 .logo a img {
@@ -136,6 +137,11 @@ main {
   border-radius: 8px;
   text-align: center;
   color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlights article:hover {
+  background-color: #ff007f;
 }
 
 .highlights article h3 {
