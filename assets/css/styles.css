@@ -41,10 +41,15 @@ header {
 
 .logo a img {
   height: 50px;
-  border-radius: 50%; /* Rounded logo */
+  border-radius: 50%;
 }
 
 main {
+  position: relative;
+}
+
+/* Hero Section with Fullscreen Video */
+.video-background {
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -93,10 +98,30 @@ main {
   color: #ffffff;
 }
 
-footer {
-  text-align: center; /* Center the text */
-  background-color: #333; /* Dark background */
-  color: white; /* White text for contrast */
-  padding: 10px 0; /* Padding for space inside the footer */
-  width: 100%; /* Make sure footer stretches full width */
+/* Event overview */
+.event-overview {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.event-overview h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.event-overview p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d0233;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
 }
