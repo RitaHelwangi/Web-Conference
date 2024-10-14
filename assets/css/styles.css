@@ -118,6 +118,35 @@ main {
   margin: 0 auto;
 }
 
+/* highlights section */
+
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.highlights article {
+  flex: 1 1 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #0a001f;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.highlights article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.highlights article p {
+  font-size: 1rem;
+}
+
 /* Footer */
 .footer {
   background-color: #0d0233;
