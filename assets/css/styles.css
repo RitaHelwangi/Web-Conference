@@ -153,6 +153,47 @@ main {
   font-size: 1rem;
 }
 
+/* Speakers page section */
+.speakers {
+    padding: 50px;
+    text-align: center;
+    background-color: #b1288f; 
+}
+
+.speakers h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+	color: #f4f4f4;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; 
+    padding: 20px;
+}
+
+.speaker {
+    background-color: rgb(21, 18, 67); 
+    border-radius: 8px;
+    padding: 10px; 
+
+}
+
+.speaker img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px 8px 0 0; 
+}
+
+.speaker h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+	color: #f4f4f4;
+}
+
+
+
 /* Footer */
 .footer {
   background-color: #0d0233;
