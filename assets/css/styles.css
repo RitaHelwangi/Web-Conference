@@ -261,6 +261,16 @@ form select {
   font-size: 1rem;
 }
 
+form input:invalid,
+form select:invalid {
+  border-color: #ff4d4d;
+}
+
+form input:valid,
+form select:valid {
+  border-color: #00ffff;
+}
+
 button[type="submit"]:hover {
   background-color: #ff007f;
   color: #ffffff;
