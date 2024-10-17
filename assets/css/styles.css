@@ -25,7 +25,8 @@ header {
   list-style-type: none;
   display: flex;
   gap: 20px;
-  margin: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .nav-left li a,
@@ -313,6 +314,27 @@ button[type="submit"]:hover {
   margin: 20px auto;
   max-width: 600px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-ticket {
+  padding: 50px;
+  background-color: #ff007f;
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.book-ticket h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #f4f4f4;
+}
+
+.book-ticket p {
+  display: block;
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  margin-bottom: 50px;
 }
 
 /* Footer */
