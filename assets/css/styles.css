@@ -276,6 +276,45 @@ button[type="submit"]:hover {
   color: #ffffff;
 }
 
+/*schedule section*/
+.schedule {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.schedule h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0a001f;
+}
+
+.schedule p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.day-schedule {
+  margin-bottom: 50px;
+}
+
+.day-schedule h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff007f;
+}
+
+.seminar {
+  background-color: #fff;
+  border: 2px solid #0d0233;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer */
 .footer {
   background-color: #0d0233;
