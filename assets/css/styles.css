@@ -253,6 +253,7 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="address"],
 form select {
   width: 100%;
   padding: 10px;
@@ -272,12 +273,39 @@ form select:valid {
   border-color: #00ffff;
 }
 
+button[type="submit"] {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 button[type="submit"]:hover {
   background-color: #ff007f;
   color: #ffffff;
 }
 
 /*schedule section*/
+.book-ticket {
+  margin: 50px;
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+  border: solid #0d0233;
+  border-radius: 10px;
+}
+
+.book-ticket h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #0a001f;
+}
+
+.book-ticket p {
+  font-size: 1.2rem;
+  color: #0a001f;
+  margin-bottom: 50px;
+}
+
 .schedule {
   padding: 50px;
   background-color: #fff;
@@ -314,27 +342,6 @@ button[type="submit"]:hover {
   margin: 20px auto;
   max-width: 600px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.book-ticket {
-  padding: 50px;
-  background-color: #ff007f;
-  text-align: center;
-  margin-bottom: 50px;
-  border-radius: 10px;
-}
-
-.book-ticket h1 {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  color: #f4f4f4;
-}
-
-.book-ticket p {
-  display: block;
-  font-size: 1.2rem;
-  color: #f4f4f4;
-  margin-bottom: 50px;
 }
 
 /* Footer */
