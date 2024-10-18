@@ -263,6 +263,17 @@ form select {
   font-size: 1rem;
 }
 
+.checkbox-align {
+  margin-right: 16px;
+}
+.checkbox-align-label {
+  margin-top: 8px;
+}
+
+.checkbox-horizental {
+  display: flex;
+}
+
 form input:invalid,
 form select:invalid {
   border-color: #ff4d4d;
