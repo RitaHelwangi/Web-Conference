@@ -235,11 +235,15 @@ main {
 }
 
 /*Register section  */
+.register-background {
+  background: linear-gradient(135deg, #d67acd 0%, #828ae2 100%);
+}
+
 #registration-form {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #efedee;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -307,30 +311,31 @@ button[type="submit"]:hover {
 }
 
 /*schedule section*/
+
 .book-ticket {
   margin: 50px;
   padding: 50px;
-  background-color: #f4f4f4;
+  background-color: #0d0233;
   text-align: center;
-  border: solid #0d0233;
+  border: solid #00ffff;
   border-radius: 10px;
 }
 
 .book-ticket h1 {
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #0a001f;
+  color: #00ffff;
 }
 
 .book-ticket p {
   font-size: 1.2rem;
-  color: #0a001f;
+  color: #f4f4f4;
   margin-bottom: 50px;
 }
 
 .schedule {
   padding: 50px;
-  background-color: #fff;
+  background: linear-gradient(135deg, #ff007f, #662270);
   text-align: center;
 }
 
@@ -343,7 +348,7 @@ button[type="submit"]:hover {
 .schedule p {
   font-size: 1.1rem;
   margin-bottom: 40px;
-  color: #333;
+  color: #0a001f;
 }
 
 .day-schedule {
@@ -353,23 +358,92 @@ button[type="submit"]:hover {
 .day-schedule h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ff007f;
+  color: #0a001f;
 }
 
 .seminar {
-  background-color: #fff;
+  background-color: #0d0233;
   border: 2px solid #0d0233;
   border-radius: 10px;
   padding: 20px;
   margin: 20px auto;
   max-width: 600px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.seminar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 20, 0.7);
+}
+
+.seminar p {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+.seminar h3 {
+  color: #f4f4f4;
+}
 /* Footer */
 .footer {
   background-color: #0d0233;
   padding: 20px;
   text-align: center;
+
   color: #ffffff;
+}
+.footer p {
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .content-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .highlights {
+    flex-direction: column;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .event-overview h2,
+  .schedule h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .content-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .highlights {
+    flex-direction: column;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .event-overview h2,
+  .schedule h1 {
+    font-size: 2rem;
+  }
 }
