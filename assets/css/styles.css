@@ -412,30 +412,6 @@ button[type="submit"]:hover {
 .footer p {
   padding: 20px;
 }
-@media (max-width: 600px) {
-  .nav-left,
-  .nav-right {
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .content-overlay h1 {
-    font-size: 2rem;
-  }
-
-  .highlights {
-    flex-direction: column;
-  }
-
-  .speakers-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .event-overview h2,
-  .schedule h1 {
-    font-size: 1.8rem;
-  }
-}
 
 /* Tablets (up to 1024px) */
 @media (max-width: 1024px) {
@@ -460,5 +436,59 @@ button[type="submit"]:hover {
   .event-overview h2,
   .schedule h1 {
     font-size: 2rem;
+  }
+
+  .highlights article {
+    flex: 1 1 120px;
+    margin: 20;
+    padding: 20;
+  }
+}
+
+/* screens (up to 600px) */
+@media (max-width: 600px) {
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .content-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .highlights {
+    flex-direction: column;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .event-overview h2,
+  .schedule h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* small screens (up to 440px) */
+@media (max-width: 440px) {
+  body {
+    font-size: smaller;
+  }
+  .btn {
+    font-size: 16px;
+  }
+
+  .book-ticket {
+    margin: 20px;
+    padding: 20px 20px 32px 20px;
+  }
+
+  .speakers {
+    padding: 16px;
+  }
+  .speaker {
+    padding: 16px;
   }
 }
