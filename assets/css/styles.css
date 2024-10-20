@@ -246,6 +246,7 @@ main {
   background-color: #efedee;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: glowing 3s infinite ease-in-out;
 }
 
 form fieldset {
@@ -311,7 +312,20 @@ button[type="submit"]:hover {
 }
 
 /*schedule section*/
-
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f,
+      0 0 20px #ff007f;
+  }
+  50% {
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff,
+      0 0 60px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f,
+      0 0 20px #ff007f;
+  }
+}
 .book-ticket {
   margin: 50px;
   padding: 50px;
@@ -319,6 +333,7 @@ button[type="submit"]:hover {
   text-align: center;
   border: solid #00ffff;
   border-radius: 10px;
+  animation: glowing 3s infinite ease-in-out;
 }
 
 .book-ticket h1 {
